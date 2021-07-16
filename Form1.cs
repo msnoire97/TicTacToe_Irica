@@ -107,7 +107,7 @@ namespace TicTacToe_Irica
             }
             if (winner == true)
             {
-                Game_Status.Text = "The game has ended. Select \"New game\" to play again!";
+                Game_Status.Text = "The game has ended. \nSelect \"New game\" to play again!";
                 String winner = "";
                 if (player == true)
                     winner = "O";
@@ -124,7 +124,7 @@ namespace TicTacToe_Irica
         {
             if (turns == 9)
             {
-                Game_Status.Text = "The game has ended. Select \"New game\" to play again!";
+                Game_Status.Text = "The game has ended. \nSelect \"New game\" to play again!";
                 MessageBox.Show("This game ends in a draw!", "Draw!");
             }
                 

@@ -173,9 +173,11 @@ namespace TicTacToe_Irica
             // Game_Status
             // 
             this.Game_Status.AutoSize = true;
-            this.Game_Status.Location = new System.Drawing.Point(18, 52);
+            this.Game_Status.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.Game_Status.ForeColor = System.Drawing.Color.Black;
+            this.Game_Status.Location = new System.Drawing.Point(18, 43);
             this.Game_Status.Name = "Game_Status";
-            this.Game_Status.Size = new System.Drawing.Size(59, 25);
+            this.Game_Status.Size = new System.Drawing.Size(61, 25);
             this.Game_Status.TabIndex = 10;
             this.Game_Status.Text = "label1";
             // 
