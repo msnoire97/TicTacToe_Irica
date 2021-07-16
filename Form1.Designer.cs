@@ -49,7 +49,9 @@ namespace TicTacToe_Irica
             // A1
             // 
             this.A1.BackColor = System.Drawing.Color.Snow;
-            this.A1.Location = new System.Drawing.Point(18, 90);
+            this.A1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.A1.ForeColor = System.Drawing.Color.Maroon;
+            this.A1.Location = new System.Drawing.Point(18, 98);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(130, 130);
             this.A1.TabIndex = 0;
@@ -59,7 +61,9 @@ namespace TicTacToe_Irica
             // A2
             // 
             this.A2.BackColor = System.Drawing.Color.Snow;
-            this.A2.Location = new System.Drawing.Point(146, 90);
+            this.A2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.A2.ForeColor = System.Drawing.Color.Maroon;
+            this.A2.Location = new System.Drawing.Point(146, 98);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(130, 130);
             this.A2.TabIndex = 1;
@@ -69,7 +73,9 @@ namespace TicTacToe_Irica
             // A3
             // 
             this.A3.BackColor = System.Drawing.Color.Snow;
-            this.A3.Location = new System.Drawing.Point(274, 90);
+            this.A3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.A3.ForeColor = System.Drawing.Color.Maroon;
+            this.A3.Location = new System.Drawing.Point(274, 98);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(130, 130);
             this.A3.TabIndex = 2;
@@ -79,7 +85,9 @@ namespace TicTacToe_Irica
             // B3
             // 
             this.B3.BackColor = System.Drawing.Color.Snow;
-            this.B3.Location = new System.Drawing.Point(274, 218);
+            this.B3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.B3.ForeColor = System.Drawing.Color.Maroon;
+            this.B3.Location = new System.Drawing.Point(274, 226);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(130, 130);
             this.B3.TabIndex = 5;
@@ -89,7 +97,9 @@ namespace TicTacToe_Irica
             // B2
             // 
             this.B2.BackColor = System.Drawing.Color.Snow;
-            this.B2.Location = new System.Drawing.Point(146, 218);
+            this.B2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.B2.ForeColor = System.Drawing.Color.Maroon;
+            this.B2.Location = new System.Drawing.Point(146, 226);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(130, 130);
             this.B2.TabIndex = 4;
@@ -99,7 +109,9 @@ namespace TicTacToe_Irica
             // B1
             // 
             this.B1.BackColor = System.Drawing.Color.Snow;
-            this.B1.Location = new System.Drawing.Point(18, 218);
+            this.B1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.B1.ForeColor = System.Drawing.Color.Maroon;
+            this.B1.Location = new System.Drawing.Point(18, 226);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(130, 130);
             this.B1.TabIndex = 3;
@@ -109,7 +121,9 @@ namespace TicTacToe_Irica
             // C3
             // 
             this.C3.BackColor = System.Drawing.Color.Snow;
-            this.C3.Location = new System.Drawing.Point(274, 346);
+            this.C3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.C3.ForeColor = System.Drawing.Color.Maroon;
+            this.C3.Location = new System.Drawing.Point(274, 354);
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(130, 130);
             this.C3.TabIndex = 8;
@@ -119,7 +133,9 @@ namespace TicTacToe_Irica
             // C2
             // 
             this.C2.BackColor = System.Drawing.Color.Snow;
-            this.C2.Location = new System.Drawing.Point(146, 346);
+            this.C2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.C2.ForeColor = System.Drawing.Color.Maroon;
+            this.C2.Location = new System.Drawing.Point(146, 354);
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(130, 130);
             this.C2.TabIndex = 7;
@@ -129,7 +145,9 @@ namespace TicTacToe_Irica
             // C1
             // 
             this.C1.BackColor = System.Drawing.Color.Snow;
-            this.C1.Location = new System.Drawing.Point(18, 346);
+            this.C1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.C1.ForeColor = System.Drawing.Color.Maroon;
+            this.C1.Location = new System.Drawing.Point(18, 354);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(130, 130);
             this.C1.TabIndex = 6;
@@ -177,16 +195,15 @@ namespace TicTacToe_Irica
             this.Game_Status.ForeColor = System.Drawing.Color.Black;
             this.Game_Status.Location = new System.Drawing.Point(18, 43);
             this.Game_Status.Name = "Game_Status";
-            this.Game_Status.Size = new System.Drawing.Size(61, 25);
+            this.Game_Status.Size = new System.Drawing.Size(0, 25);
             this.Game_Status.TabIndex = 10;
-            this.Game_Status.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(423, 496);
+            this.ClientSize = new System.Drawing.Size(423, 501);
             this.Controls.Add(this.Game_Status);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
@@ -199,9 +216,11 @@ namespace TicTacToe_Irica
             this.Controls.Add(this.A1);
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
