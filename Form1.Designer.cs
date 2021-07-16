@@ -41,7 +41,6 @@ namespace TicTacToe_Irica
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.New = new System.Windows.Forms.ToolStripMenuItem();
-            this.Help = new System.Windows.Forms.ToolStripMenuItem();
             this.Game_Status = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
@@ -159,8 +158,7 @@ namespace TicTacToe_Irica
             this.Menu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.About,
-            this.New,
-            this.Help});
+            this.New});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(423, 33);
@@ -180,13 +178,6 @@ namespace TicTacToe_Irica
             this.New.Size = new System.Drawing.Size(114, 29);
             this.New.Text = "&New Game";
             this.New.Click += new System.EventHandler(this.New_Game);
-            // 
-            // Help
-            // 
-            this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(124, 29);
-            this.Help.Text = "&How to Play";
-            this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
             // Game_Status
             // 
@@ -243,7 +234,6 @@ namespace TicTacToe_Irica
         private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem About;
         private System.Windows.Forms.ToolStripMenuItem New;
-        private System.Windows.Forms.ToolStripMenuItem Help;
         private System.Windows.Forms.Label Game_Status;
     }
 }

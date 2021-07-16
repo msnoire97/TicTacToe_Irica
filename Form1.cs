@@ -19,7 +19,7 @@ namespace TicTacToe_Irica
         public Form1()
         {
             InitializeComponent();
-            Game_Status.Text = "It is now Player 1's turn!";
+            Game_Status.Text = "It is now Player 1's turn!\n Please click any blank tile.";
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -30,12 +30,12 @@ namespace TicTacToe_Irica
                 if (player == true)
                 {
                     tic.Text = "X";
-                    Game_Status.Text = "It is now Player 2's turn!";
+                    Game_Status.Text = "It is now Player 2's turn!\n Please click any blank tile.";
                 }
                 else
                 {
                     tic.Text = "O";
-                    Game_Status.Text = "It is now Player 1's turn!";
+                    Game_Status.Text = "It is now Player 1's turn!\n Please click any blank tile.";
                 }
 
                 player = !player;
@@ -146,12 +146,7 @@ namespace TicTacToe_Irica
 
         private void About_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Help_Click(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Tic Tac Toe Game! \n \n by Gabrielle Joy M. Irica || BSCOE 1 - 5");
         }
 
         private void New_Game(object sender, EventArgs e)
@@ -162,7 +157,7 @@ namespace TicTacToe_Irica
             player = true;
             winner = false;
             turns = 0;
-            Game_Status.Text = "It is now Player 1's turn!";
+            Game_Status.Text = "It is now Player 1's turn!\n Please click any blank tile.";
         }
     }
 }
