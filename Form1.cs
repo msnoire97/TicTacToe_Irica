@@ -35,6 +35,7 @@ namespace TicTacToe_Irica
                 turns++;
 
                 Winner_Check();
+                Draw_Check();
             } 
         }
 
@@ -69,16 +70,12 @@ namespace TicTacToe_Irica
 
                 MessageBox.Show(winner + " has won this round!", "Hoorah!");
             }
-
-
         }
 
-        private void disable_tic()
+        private void Draw_Check()
         {
-
-
-
+            if (turns == 9)
+                MessageBox.Show("This game ends in a draw!", "Draw!");
         }
-
     }
 }
