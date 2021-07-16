@@ -56,7 +56,15 @@ namespace TicTacToe_Irica
             else if ((A3.Text == B2.Text) || (B2.Text == C1.Text) || (A3.Enabled = false))
                 winner = true;
 
+            if (winner == true)
+            {
+                String winner = "";
+                if (player == true)
+                    winner = "O";
+                else
+                    winner = "X";
 
+                MessageBox.Show(winner + "has won this round!", "Hoorah!");
             }
 
 
