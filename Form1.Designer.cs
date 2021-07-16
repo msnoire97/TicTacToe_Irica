@@ -137,25 +137,28 @@ namespace TicTacToe_Irica
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(423, 33);
             this.Menu.TabIndex = 9;
-            this.Menu.Text = "menuStrip1";
+            this.Menu.Text = "Menu";
             // 
             // About
             // 
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(78, 29);
-            this.About.Text = "About";
+            this.About.Text = "&About";
+            this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // New
             // 
             this.New.Name = "New";
             this.New.Size = new System.Drawing.Size(114, 29);
-            this.New.Text = "New Game";
+            this.New.Text = "&New Game";
+            this.New.Click += new System.EventHandler(this.New_Game);
             // 
             // Help
             // 
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(65, 29);
-            this.Help.Text = "Help";
+            this.Help.Size = new System.Drawing.Size(124, 29);
+            this.Help.Text = "&How to Play";
+            this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
             // Form1
             // 

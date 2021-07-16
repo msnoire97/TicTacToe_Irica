@@ -108,7 +108,7 @@ namespace TicTacToe_Irica
                 else
                     winner = "X";
 
-
+                Disable_Tics();
                 MessageBox.Show(winner + " has won this round!", "Hoorah!");
             }
         }
@@ -117,6 +117,34 @@ namespace TicTacToe_Irica
         {
             if (turns == 9)
                 MessageBox.Show("This game ends in a draw!", "Draw!");
+        }
+
+        private void Disable_Tics()
+        {
+            A1.Enabled = false;
+            A2.Enabled = false;
+            A3.Enabled = false;
+            B1.Enabled = false;
+            B2.Enabled = false;
+            B3.Enabled = false;
+            C1.Enabled = false;
+            C2.Enabled = false;
+            C3.Enabled = false;
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Help_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void New_Game(object sender, EventArgs e)
+        {
+
         }
     }
 }
