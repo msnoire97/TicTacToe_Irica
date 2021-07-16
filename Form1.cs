@@ -44,24 +44,62 @@ namespace TicTacToe_Irica
         private void Winner_Check ()
         {
             if ((A1.Text == A2.Text) && (A2.Text == A3.Text) && (A1.Text != ""))
+            {
                 winner = true;
+                A1.BackColor = Color.Teal;
+                A2.BackColor = Color.Teal;
+                A3.BackColor = Color.Teal;
+            }
+                
             else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (B1.Text != ""))
+            {
                 winner = true;
+                B1.BackColor = Color.Teal;
+                B2.BackColor = Color.Teal;
+                B3.BackColor = Color.Teal;
+            }
             else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (C1.Text != ""))
+            {
                 winner = true;
-
+                C1.BackColor = Color.Teal;
+                C2.BackColor = Color.Teal;
+                C3.BackColor = Color.Teal;
+            }
             else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (A1.Text != ""))
+            {
                 winner = true;
+                A1.BackColor = Color.Teal;
+                B1.BackColor = Color.Teal;
+                C1.BackColor = Color.Teal;
+            }
             else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (A2.Text != ""))
+            {
                 winner = true;
+                A2.BackColor = Color.Teal;
+                B2.BackColor = Color.Teal;
+                C2.BackColor = Color.Teal;
+            }
             else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (A3.Text != ""))
+            {
                 winner = true;
-
+                A3.BackColor = Color.Teal;
+                B3.BackColor = Color.Teal;
+                C3.BackColor = Color.Teal;
+            }
             else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (A1.Text != ""))
+            {
                 winner = true;
+                A1.BackColor = Color.Teal;
+                B2.BackColor = Color.Teal;
+                C3.BackColor = Color.Teal;
+            }
             else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (A3.Text != ""))
+            {
                 winner = true;
-
+                C1.BackColor = Color.Teal;
+                B2.BackColor = Color.Teal;
+                A3.BackColor = Color.Teal;
+            }
             if (winner == true)
             {
                 String winner = "";
@@ -69,6 +107,7 @@ namespace TicTacToe_Irica
                     winner = "O";
                 else
                     winner = "X";
+
 
                 MessageBox.Show(winner + " has won this round!", "Hoorah!");
             }
