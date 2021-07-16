@@ -16,6 +16,8 @@ namespace TicTacToe_Irica
         bool winner = false;
         int turns = 0;
 
+        public Color Turquoise { get; private set; }
+
         public Form1()
         {
             InitializeComponent();

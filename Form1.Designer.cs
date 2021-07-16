@@ -47,6 +47,7 @@ namespace TicTacToe_Irica
             // 
             // A1
             // 
+            this.A1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.A1.Location = new System.Drawing.Point(18, 90);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(130, 130);
