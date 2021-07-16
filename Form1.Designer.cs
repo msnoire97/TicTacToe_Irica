@@ -42,7 +42,7 @@ namespace TicTacToe_Irica
             this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.New = new System.Windows.Forms.ToolStripMenuItem();
             this.Help = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Game_Status = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,14 +170,14 @@ namespace TicTacToe_Irica
             this.Help.Text = "&How to Play";
             this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
-            // label1
+            // Game_Status
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.Game_Status.AutoSize = true;
+            this.Game_Status.Location = new System.Drawing.Point(18, 52);
+            this.Game_Status.Name = "Game_Status";
+            this.Game_Status.Size = new System.Drawing.Size(59, 25);
+            this.Game_Status.TabIndex = 10;
+            this.Game_Status.Text = "label1";
             // 
             // Form1
             // 
@@ -185,7 +185,7 @@ namespace TicTacToe_Irica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(423, 496);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Game_Status);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
@@ -223,7 +223,7 @@ namespace TicTacToe_Irica
         private System.Windows.Forms.ToolStripMenuItem About;
         private System.Windows.Forms.ToolStripMenuItem New;
         private System.Windows.Forms.ToolStripMenuItem Help;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Game_Status;
     }
 }
 

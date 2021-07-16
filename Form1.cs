@@ -15,12 +15,11 @@ namespace TicTacToe_Irica
         bool player = true;
         bool winner = false;
         int turns = 0;
-
-        public Color Turquoise { get; private set; }
-
+        
         public Form1()
         {
             InitializeComponent();
+            Game_Status.Text = "It is now Player 1's turn!";
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -29,9 +28,15 @@ namespace TicTacToe_Irica
             if (tic.Text == "")
             {
                 if (player == true)
+                {
                     tic.Text = "X";
+                    Game_Status.Text = "It is now Player 2's turn!";
+                }
                 else
+                {
                     tic.Text = "O";
+                    Game_Status.Text = "It is now Player 1's turn!";
+                }
 
                 player = !player;
                 turns++;
@@ -109,6 +114,7 @@ namespace TicTacToe_Irica
                     winner = "X";
 
                 Disable_Tics();
+                Game_Status.Text = "The game has ended. Select New game to play again!";
                 MessageBox.Show(winner + " has won this round!", "Hoorah!");
             }
         }
@@ -117,6 +123,7 @@ namespace TicTacToe_Irica
         {
             if (turns == 9)
                 MessageBox.Show("This game ends in a draw!", "Draw!");
+            Game_Status.Text = "The game has ended. Select New game to play again!";
         }
 
         private void Disable_Tics()
@@ -150,6 +157,7 @@ namespace TicTacToe_Irica
             player = true;
             winner = false;
             turns = 0;
+            Game_Status.Text = "It is now Player 1's turn!";
         }
     }
 }
