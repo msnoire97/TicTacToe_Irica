@@ -24,37 +24,39 @@ namespace TicTacToe_Irica
         private void Button_Click(object sender, EventArgs e)
         {
             Button tic = (Button)sender;
-            if (player == true)
-                tic.Text = "X";
-            else
-                tic.Text = "O";
+            if (tic.Text == "")
+            {
+                if (player == true)
+                    tic.Text = "X";
+                else
+                    tic.Text = "O";
 
-            player = !player;
-            tic.Enabled = false;
-            turns++;
+                player = !player;
+                turns++;
 
-            Winner_Check();
+                Winner_Check();
+            } 
         }
 
         private void Winner_Check ()
         {
-            if ((A1.Text == A2.Text) && (A2.Text == A3.Text) && (A1.Enabled == false))
+            if ((A1.Text == A2.Text) && (A2.Text == A3.Text) && (A1.Text != ""))
                 winner = true;
-            else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (B1.Enabled == false))
+            else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (B1.Text != ""))
                 winner = true;
-            else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (C1.Enabled == false))
-                winner = true;
-
-            else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (A1.Enabled == false))
-                winner = true;
-            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (A2.Enabled == false))
-                winner = true;
-            else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (A3.Enabled == false))
+            else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (C1.Text != ""))
                 winner = true;
 
-            else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (A1.Enabled == false))
+            else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (A1.Text != ""))
                 winner = true;
-            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (A3.Enabled == false))
+            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (A2.Text != ""))
+                winner = true;
+            else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (A3.Text != ""))
+                winner = true;
+
+            else if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (A1.Text != ""))
+                winner = true;
+            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (A3.Text != ""))
                 winner = true;
 
             if (winner == true)
@@ -71,7 +73,12 @@ namespace TicTacToe_Irica
 
         }
 
+        private void disable_tic()
+        {
 
+
+
+        }
 
     }
 }
