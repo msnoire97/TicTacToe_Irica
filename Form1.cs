@@ -145,10 +145,11 @@ namespace TicTacToe_Irica
         private void New_Game(object sender, EventArgs e)
         {
             A1.Text = A2.Text = A3.Text = B1.Text = B2.Text = B3.Text = C1.Text = C2.Text = C3.Text = "";
+            A1.BackColor = A2.BackColor = A3.BackColor = B1.BackColor = B2.BackColor = B3.BackColor = C1.BackColor = C2.BackColor = C3.BackColor = Color.Snow;
             A1.Enabled = true; A2.Enabled = true; A3.Enabled = true; B1.Enabled = true; B2.Enabled = true; B3.Enabled = true; C1.Enabled = true; C2.Enabled = true; C3.Enabled = true;
-            bool player = true;
-            bool winner = false;
-            int turns = 0;
+            player = true;
+            winner = false;
+            turns = 0;
         }
     }
 }
