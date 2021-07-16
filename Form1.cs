@@ -107,14 +107,15 @@ namespace TicTacToe_Irica
             }
             if (winner == true)
             {
+                Game_Status.Text = "The game has ended. Select \"New game\" to play again!";
                 String winner = "";
                 if (player == true)
                     winner = "O";
                 else
                     winner = "X";
 
+
                 Disable_Tics();
-                Game_Status.Text = "The game has ended. Select New game to play again!";
                 MessageBox.Show(winner + " has won this round!", "Hoorah!");
             }
         }
@@ -122,8 +123,12 @@ namespace TicTacToe_Irica
         private void Draw_Check()
         {
             if (turns == 9)
+            {
+                Game_Status.Text = "The game has ended. Select \"New game\" to play again!";
                 MessageBox.Show("This game ends in a draw!", "Draw!");
-            Game_Status.Text = "The game has ended. Select New game to play again!";
+            }
+                
+            
         }
 
         private void Disable_Tics()
